@@ -5,7 +5,7 @@ Windows 10 64-bit application to transfer files between computers (also between 
 
 Steps to run the software
 
-1. Place "ftp_server.exe" inside the parent folder of the folder to be transfered (This is the Server Computer)
+1. Place "ftp_server.exe" inside the parent folder of the folder to be transferred (This is the Server Computer)
 2. Run "ftp_server.exe" on the Server computer and follow the instructions
 3. Go to the location bar of the file explorer in the Client computer and enter the URL generated in the Server computer
 4. Enter the credentials if you are a registered user
