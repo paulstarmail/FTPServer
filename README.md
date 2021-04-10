@@ -6,7 +6,7 @@ Windows 10 64-bit application to transfer folders/files between computers (also 
 Steps to use the software
 
 1. Place "ftp_server.exe" inside the parent folder of the folder to be transferred or inside the containing folder of the file to be transferred (This is the Server computer)
-2. Press Win key + R > Type "cmd" and enter > Type "ipconfig" and enter > Look for "IPv4 Address"
+2. Press Windows key + R > Type "cmd" and enter > Type "ipconfig" and enter > Look for "IPv4 Address"
 3. Run "ftp_server.exe" on the Server computer by double clicking it and follow the instructions
 4. Go to the location bar of the file explorer in the Client computer and enter the URL generated in the Server computer
 5. Enter the credentials if you are a registered user
