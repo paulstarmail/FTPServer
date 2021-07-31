@@ -1,7 +1,7 @@
 
 FTPServer
 
-Windows 10 64-bit application to transfer folders/files between computers (also between computers and mobile phones, provided an FTP app is installed in the mobile phones, such as "AndFTP" for example) in a wired/wireless LAN such as home/work network.
+Windows 10 64-bit application to transfer folders/files between computers (also between computers and mobile phones, provided an FTP app is installed in the mobile phones, such as "FTP Tool" for example) in a wired/wireless LAN such as home/work network.
 
 Steps to use the software
 
