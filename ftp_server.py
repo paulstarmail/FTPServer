@@ -3,19 +3,29 @@
 # https://pyftpdlib.readthedocs.io/en/latest/tutorial.html#a-base-ftp-server
 
 import os
-
+import pyautogui
+import colorama
+import socket
+from threading import Thread
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 from termcolor import colored
-import colorama
 from getpass import getpass
+
+def editable_input(text):
+    Thread(target=pyautogui.write, args=(text,)).start()
+    modified_input = input()
+    return modified_input
 
 def main():
     # Asking for ip address.
-    ip_address = str(input("\nEnter the IPv4 address of this computer in LAN (Run \"ipconfig\" in \"cmd\" for more info): "))
-    port = str(input("Enter a desired port (Must be >=1024 and <=65535, Typically 8002): "))
-    choice = str(input("Enter 1 for anonymous read-only user or 2 for registered read/write user: "))
+    print("\nEnter the IPv4 address of this computer in LAN (Run \"ipconfig\" in \"cmd\" for more info): ")
+    ip_address = str(editable_input(str(socket.gethostbyname(socket.gethostname()))))
+    print("Enter a desired port (Must be >=1024 and <=65535. Typically, 2121): ")
+    port = str(editable_input("2121"))
+    print("Enter 1 for anonymous read-only user or 2 for registered read/write user: ")
+    choice = str(editable_input("2"))
     
     # Instantiate a dummy authorizer for managing 'virtual' users
     authorizer = DummyAuthorizer()
@@ -24,11 +34,12 @@ def main():
     if(choice == "1"):
         # anonymous user
         colorama.init()
-        print("URL to be entered in the client: " + colored("ftp://" + str(ip_address) + ":" + str(port) + "\n", 'cyan'))
+        print("URL to be entered in the client: " + colored("ftp://" + str(ip_address) + ":" + str(port), 'cyan'))
+        print("Username: " + colored("anonymous" + "\n", 'cyan'))
         authorizer.add_anonymous(os.getcwd())
     else:
-        username = str(input("Enter a one-time username: "))
-        password = getpass(prompt = "Enter a one-time password: ", stream = None)
+        username = str(input("Enter a one-time Username: "))
+        password = getpass(prompt = "Enter a one-time Password: ", stream = None)
         colorama.init()
         print("URL to be entered in the client: " + colored("ftp://" + str(ip_address) + ":" + str(port) + "\n", 'cyan'))
         # username followed by password
