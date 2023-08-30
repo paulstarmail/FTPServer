@@ -7,7 +7,7 @@ Pre-requisites
 ==============
 1. A working installation of "python 3" which is added to "Path".
 2. All the dependencies in "ftp_server.py" installed through "pip3".
-3. Executable of "python 3" in the installation directory, allowed in Outbound rules, of the Firewall.
+3. Executable of "python 3" in the installation directory, allowed in "Outbound Rules", of the "Firewall".
 
 Steps to use the software
 =========================
