@@ -1,9 +1,16 @@
 
 FTPServer
 
-Windows 11 64-bit application to transfer folders/files between computers (also between computers and mobile phones, provided an FTP app is installed in the mobile phones, such as "FTP Tool" for example) in a wired/wireless LAN such as home/work network.
+Windows 11 64-bit application to transfer folders/files between computers (also between computers and mobile phones, provided an FTP enabled app is installed in the mobile phones, such as "Cx File Explorer" for example) in a wired/wireless LAN such as home/work network.
+
+Pre-requisites
+==============
+1. A working installation of "python 3" which is added to "Path".
+2. All the dependencies in "ftp_server.py" installed through "pip3".
+3. Executable of "python 3" in the installation directory, allowed for Outbound connection, in the Firewall.
 
 Steps to use the software
+=========================
 
 1. Place "ftp_server.py" inside the parent folder of the folder to be transferred or inside the containing folder of the file to be transferred (This is the Server computer).
 2. Run "ftp_server.py" on the Server computer by double clicking it and follow the instructions (All the input suggestions are editable).
