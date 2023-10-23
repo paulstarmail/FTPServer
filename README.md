@@ -7,7 +7,7 @@ Pre-requisites
 ==============
 1. A working installation of "python 3" whose directory is added to "Path".
 2. All the dependencies in "ftp_server.py" installed through "pip3".
-3. Executable of "python 3" in the installation directory, allowed in "Outbound Rules" and also, allowed for "Public" and "Private" networks, in the "Firewall".
+3. Port used by "ftp_server.py" is allowed for "Inbound Rules" and "Outbound Rules" in "Firewall" for "TCP" and "UDP".
 
 Steps to use the software
 =========================
