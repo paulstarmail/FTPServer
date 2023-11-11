@@ -8,8 +8,11 @@ Pre-requisites
 1. A working installation of "python 3" whose directory is added to "Path".
 2. All the dependencies in "ftp_server.py" installed through "pip3".
 3. "Local port" used by "ftp_server.py" (Typically, 2121) set, and, "Remote port" set to "All Ports", is allowed for "Inbound Rules", in "Firewall", for "TCP".
+
    ![image](https://github.com/paulstarmail/FTPServer/assets/60135524/4180572f-6cb8-4537-a32f-02ce9e5424b3)
-4. "Local port" used by "ftp_server.py" (Typically, 2121) set, and, "Remote port" set to "All Ports", is allowed for "Outbound Rules", in "Firewall", for "TCP".
+
+5. "Local port" used by "ftp_server.py" (Typically, 2121) set, and, "Remote port" set to "All Ports", is allowed for "Outbound Rules", in "Firewall", for "TCP".
+
    ![image](https://github.com/paulstarmail/FTPServer/assets/60135524/fd247230-5c88-45a9-9c33-43724344e22d)
 
 
