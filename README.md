@@ -1,6 +1,5 @@
-
 FTPServer
-
+=========
 Windows 11 64-bit application to transfer folders/files between computers (also between computers and mobile phones, provided an FTP enabled app is installed in the mobile phones, such as "Cx File Explorer" for example) in a wired/wireless LAN such as home/work network.
 
 Pre-requisites
@@ -11,14 +10,13 @@ Pre-requisites
     
    ![image](https://github.com/paulstarmail/FTPServer/assets/60135524/4180572f-6cb8-4537-a32f-02ce9e5424b3)
 
-5. "Local port" used by "ftp_server.py" (Typically, 2121) set, and, "Remote port" set to "All Ports", is allowed for "Outbound Rules", in "Firewall", for "TCP".
+4. "Local port" used by "ftp_server.py" (Typically, 2121) set, and, "Remote port" set to "All Ports", is allowed for "Outbound Rules", in "Firewall", for "TCP".
    
    ![image](https://github.com/paulstarmail/FTPServer/assets/60135524/fd247230-5c88-45a9-9c33-43724344e22d)
 
 
 Steps to use the software
 =========================
-
 1. Place "ftp_server.py" inside the parent folder of the folder to be transferred or inside the containing folder of the file to be transferred (This is the Server computer).
 2. Run "ftp_server.py" on the Server computer by double clicking it and follow the instructions (All the input suggestions are editable).
 3. Go to the location bar of the file explorer in the Client computer and enter the URL generated in the Server computer.
