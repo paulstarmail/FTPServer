@@ -7,8 +7,8 @@ Pre-requisites
 ==============
 1. A working installation of "python 3" whose directory is added to "Path".
 2. All the dependencies in "ftp_server.py" installed through "pip3".
-3. Local Port used by "ftp_server.py" is allowed for "Inbound Rules" and "Outbound Rules" in "Firewall" for "TCP".
-4. Allow "All Ports" from "Remort Port" connecting to "ftp_server.py" for "Inbound Rules" and "Outbound Rules" in "Firewall" for "TCP".
+3. "Local Port" used by "ftp_server.py" is allowed for "Inbound Rules" and "Outbound Rules" in "Firewall" for "TCP".
+4. "All Ports" of "Remort Port" connecting to "ftp_server.py" allowed for "Inbound Rules" and "Outbound Rules" in "Firewall" for "TCP".
 
 Steps to use the software
 =========================
